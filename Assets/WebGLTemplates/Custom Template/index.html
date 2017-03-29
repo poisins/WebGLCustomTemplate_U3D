@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="TemplateData/style.css">
+	<link rel="stylesheet" href="TemplateData/customStyle.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+	<script type="text/javascript" src="TemplateData/tweenjs-0.6.2.min.js"></script>
+	<script type="text/javascript" src="TemplateData/CSSPlugin.js"></script>
+  </head>
+  
+  <body class="template">
+    <div class="fullWidth">
+		<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px" tabindex="1"></canvas>
+		
+		<div id="loadingBox">
+			<img id="logo" src="TemplateData/logo.png" />
+			
+			<div id="bgBar"></div>
+			<div id="progressBar"></div>
+			<p id="loadingInfo">Loading...</p>
+		</div>
+		
+	</div>
+    %UNITY_WEBGL_LOADER_GLUE%
+  </body>
+  
+</html>

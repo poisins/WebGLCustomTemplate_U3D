@@ -1,0 +1,11 @@
+<files *.js>
+SetOutputFilter DEFLATE
+</files>
+
+<files *.data>
+SetOutputFilter DEFLATE
+</files>
+
+<files *.mem>
+SetOutputFilter DEFLATE
+</files>
