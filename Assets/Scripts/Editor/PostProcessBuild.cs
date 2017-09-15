@@ -24,11 +24,14 @@ namespace Poisins
                 {
                     string pureBuildPath = pathToBuiltProject;
                     pureBuildPath = Path.Combine(pureBuildPath, "Release");
-                    foreach (string file in Directory.GetFiles(pureBuildPath,"*.*gz"))
-                    {
-                        if (UnGzipFiles(pureBuildPath, file))
-                            File.Delete(file);
-                    }
+					if (Directory.Exists(pureBuildPath))
+					{
+						foreach (string file in Directory.GetFiles(pureBuildPath,"*.*gz"))
+						{
+							if (UnGzipFiles(pureBuildPath, file))
+								File.Delete(file);
+						}
+					}
                 }
             }
         }
