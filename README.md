@@ -1,5 +1,6 @@
 # WebGLCustomTemplate_U3D
 Unity3D WebGL custom responsive template with improved progress bar and build's auto-unzipper
+Inspired by [this beautiful article](https://ocias.com/blog/unity-webgl-custom-progress-bar/)
 
 **Unity 2017.1 and newer!**
 
